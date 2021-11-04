@@ -1,0 +1,36 @@
+Functia HIRE
+In cadrul acestei functii cautam parintele in arborele dat si daca acesta exsl parintelui cu ajutorul functiei add_to_manager adaugam noul angajat in teamul parintelui
+Funtia add_to_manager realloca sau aloca memoriaa vectorului team pentru a incapea toti fii si il adauga pe cel nou pastrand ordinea alfabetica a nodurilor
+
+Functia Fire 
+Cautam angajatul dupa nume cu ajutorul functiei search_empployee si daca il gasim il stergem din teamul parintelui si adaugam toti angajatii sai ca fii ai parintelui sau.
+Functia delete_employee_from_team sterge unnode din lista de fii a altui nod;
+La final se elibereaza memoria nodului concediat.
+
+Functia PROMOTE
+Cream o compie a nodului dat de promovare si o adaugam mai sus in ierarhie urmand sa stergem nodul initial cu ajutorul functiei fire.
+
+Functia MOVE_EMPLOYEE
+Intai stergem nodul din arbore, urmand sa cream  un nou nod cu informatiile nodului sters pe care il adaugam la lista de fii a nodului dat ca nou meneger.
+
+Functia MOVE_TEAM
+stergem legaturile dintre nodul parnte al echipei pe care vrem sa o mutam si parintele acestui subarbore, urmand sa facem legatura acestui subarbore cu noul manager
+
+Functia FIRE_TEAM
+stergem legatura dintre parintele nodului reprezentant al echipei pe care o stergem si acesta, dupa care eliberam memoria acestui subarbore
+
+Functia EMPLOYEES_BY_MANGER
+Folosim functia recursiva add_employee_by_manager care adauga toti angajatii de sub manager intr-o lista data ca parametru care urmeaza sa contina adresele tuturor angajatilor in ordine alfabetica
+Afisam numele nodurilor din vectorul creat si eliberam memoria
+
+Functia EMPLOYEES_BY_LEVEL
+Asemanator cu functia precedenta folosim functia add_employees_by_manager care adauga intr-o lista data ca parametru toti fii de pe un nivel al unui arbore intr-un vector dat ca parametru.
+Afisam numele nodurilor din lista si eliberam memoria
+
+Functia Best_Manager
+Folosim o functie maxim_manager_size care calculeaza maximul de angajati directi ai unui manager
+Apoi cu ajutorul functiei add_max_manager adaugam best managerii intr-o lista data ca parametru.
+Afisam numele nodurilor din lista si eliberam memoria
+
+Functia reorganize
+Folosim o functie auxiliara rotate_tree care pleaca de la noul manager si trece prin fiecare manager direct si indirect al nodului dat si ii transforma in fii ai nodurilor anterioare.
